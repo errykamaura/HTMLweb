@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <title>Experience</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        window.onload = function () {
+            // Menampilkan peringatan saat halaman dimuat
+            alert('Do you want to see my contacts?');
+
+            // Ubah teks ketika tombol "Ikuti" diklik
+            document.querySelector('.btn').addEventListener('click', function () {
+                alert('Thanks for following!');
+            });
+
+            // Mnampilkan informasi kontak saat mengklik tautan LinkedIn
+            document.querySelector('.Contact a.btn').addEventListener('click', function () {
+                var linkedInLink = document.querySelector('.Contact h4:contains("Linkedln") + a.btn');
+                alert('LinkedIn Profile: ' + linkedInLink.href);
+            });
+        };
+    </script>
+    <nav>
+        <h2 class="logo">Personal  <span>Website</span></h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="skill.html">Skill</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+        <a href="https://instagram.com/adystier?igshid=MzMyNGUyNmU2YQ==" class="btn">Follow</a>
+    </nav>
+    
+<section class="Contact">
+    <div class="contact-text">
+        <h2>Contact <span>Me</span></h2>
+        <div class="contact-info">
+            <div class="contact-box">
+                <div class="Contact">
+                    <h4>Address</h4>
+                    <p>Mintaragen Tegal Jawa Tengah</p>
+                </div>
+                <div class="Contact">
+                    <h4>Email</h4>
+                    <p>errikamaura@gmail.com</p>
+                </div>
+                <div class="Contact">
+                    <h4>Instagram</h4>
+                    <a href="https://instagram.com/adystier?igshid=MzMyNGUyNmU2YQ==" class="btn">Follow</a>
+                </div>
+                <div class="Contact">
+                    <h4>Telp.</h4>
+                    <p>08965545xxxx</p>
+                </div>
+                <div class="Contact">
+                    <h4>Linkedln</h4>
+                    <a href="https://id.linkedin.com/in/erryka-maura-adysti-880715293" class="btn">Klik Disini</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</html>
